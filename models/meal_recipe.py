@@ -6,4 +6,4 @@ class MealRecipe(models.Model):
 
   name = fields.Char(required=True)
   description = fields.Text()
-  
+  ingredient_ids = fields.One2many("meal.recipe.ingredient", "recipe_id", string="Ingredients")
