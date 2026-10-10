@@ -1,3 +1,4 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_meal_recipe,access_meal_recipe,model_meal_recipe,base.group_user,1,1,1,1
 access_meal_recipe_ingredient,access_meal_recipe_ingredient,model_meal_recipe_ingredient,base.group_user,1,1,1,1
+access_meal_produce,access_meal_produce,model_meal_produce,base.group_user,1,1,1,1

@@ -24,13 +24,23 @@
           </group>
           <notebook>
             <page string="Ingredients">
-              <group>
-                <field name="ingredient_ids"/>
-              </group>
+              <field name="ingredient_ids"/>
             </page>
           </notebook>
         </sheet>
       </form>
+    </field>
+  </record>
+
+  <record id="meal_recipe_ingredient_list" model="ir.ui.view">
+    <field name="name">meal.recipe.ingredient.list</field>
+    <field name="model">meal.recipe.ingredient</field>
+    <field name="arch" type="xml">
+      <list string="Ingredients">
+        <field name="produce_ids" string="Ingredient Name" />
+        <field name="quantity" />
+        <field name="unit" />
+      </list>
     </field>
   </record>
 
@@ -41,7 +51,7 @@
       <form>
         <sheet>
           <group>
-            <field name="name" string="Ingredient Name" />
+            <field name="produce_ids" string="Ingredient Name" />
             <field name="description" />
             <field name="quantity" />
             <field name="unit" />
