@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <menuitem id="meal_menu_root" name="Meal">
+    <menuitem id="meal_menu_cookbook" name="Cookbook">
+      <menuitem id="meal_recipe_menu_action" action="meal_recipe_action" />
+    </menuitem>
+  </menuitem>
+</odoo>
