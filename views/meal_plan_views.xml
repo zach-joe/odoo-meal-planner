@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="meal_plan_list" model="ir.ui.view">
+    <field name="name">meal.plan.list</field>
+    <field name="model">meal.plan</field>
+    <field name="arch" type="xml">
+      <list string="My Plan">
+        <field name="date" />
+        <field name="recipe_ids" string="Recipe" widget="many2many_tags" />
+        <field name="period" string="Time of Day" />
+      </list>
+    </field>
+  </record>
+
+  <record id="meal_plan_action" model="ir.actions.act_window">
+    <field name="name">My Meal Plan</field>
+    <field name="res_model">meal.plan</field>
+    <field name="view_mode">list,form</field>
+  </record>
+</odoo>

@@ -8,6 +8,9 @@
     "security/ir.model.access.csv", 
 
     "views/meal_recipe_views.xml",
+    "views/meal_produce_views.xml", 
+    "views/meal_plan_views.xml",
+    "views/meal_shopping_list_views.xml", 
     "views/meal_menus.xml"
   ]
 }

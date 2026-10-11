@@ -3,6 +3,13 @@
   <menuitem id="meal_menu_root" name="Meal">
     <menuitem id="meal_menu_cookbook" name="Cookbook">
       <menuitem id="meal_recipe_menu_action" action="meal_recipe_action" />
+      <menuitem id="meal_produce_menu_action" action="meal_produce_action" />
+    </menuitem>
+    <menuitem id="meal_menu_mealplan" name="Planning">
+      <menuitem id="meal_plan_menu_action" action="meal_plan_action" />
+    </menuitem>
+    <menuitem id="meal_menu_shopping_list" name="Shopping">
+      <menuitem id="meal_shopping_list_menu_action" action="meal_shopping_list_action" />
     </menuitem>
   </menuitem>
 </odoo>

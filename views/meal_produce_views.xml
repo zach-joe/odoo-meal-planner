@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="meal_produce_list" model="ir.ui.view">
+    <field name="name">meal.produce.list</field>
+    <field name="model">meal.produce</field>
+    <field name="arch" type="xml">
+      <list string="Available Produces">
+        <field name="name" string="Produce Name" />
+        <field name="form" />
+        <field name="default_unit" />
+        <field name="is_staple" string="Staple" />
+      </list>
+    </field> 
+  </record>
+
+  <record id="meal_produce_form" model="ir.ui.view">
+    <field name="name">meal.produce.form</field>
+    <field name="model">meal.produce</field>
+    <field name="arch" type="xml">
+      <form string="Produce Form">
+        <sheet>
+          <div class="oe_title">
+            <h1><field name="name" /></h1>
+          </div>
+          <group>
+            <field name="form" />
+            <field name="is_staple" />
+            <field name="default_unit" />
+            <field name="note" />
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="meal_produce_action" model="ir.actions.act_window">
+    <field name="name">Produces</field>
+    <field name="res_model">meal.produce</field>
+    <field name="view_mode">list,form</field>
+  </record>
+</odoo>

@@ -6,7 +6,7 @@ class MealPlan(models.Model):
 
   date = fields.Date(required=True)
   period = fields.Selection(
-    string="Time of day", 
+    string="Time of Day", 
     selection=[
       ("breakfast", "Breakfast"),
       ("lunch", "Lunch"),
