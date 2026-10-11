@@ -8,4 +8,3 @@ class MealShoppingList(models.Model):
   produce_id = fields.Many2one("meal.produce", string="Product", required=True)
   quantity = fields.Float(help="Quantity you need for the week.")
   unit = fields.Char(help="Unit of the product's quantity.")
-  recipe_ids = fields.Many2many("meal.recipe", string="For (Recipe)", help="Recipe in which this product is used.")

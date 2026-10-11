@@ -5,6 +5,9 @@
     <field name="model">meal.plan</field>
     <field name="arch" type="xml">
       <list string="My Plan">
+        <header>
+          <button type="object" name="action_generate_shopping_list" string="Generate Shopping List" />
+        </header>
         <field name="date" />
         <field name="recipe_ids" string="Recipe" widget="many2many_tags" />
         <field name="period" string="Time of Day" />

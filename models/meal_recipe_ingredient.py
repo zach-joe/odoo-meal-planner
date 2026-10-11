@@ -4,7 +4,7 @@ class MealRecipeIngredient(models.Model):
   _name = "meal.recipe.ingredient"
   _description = "Ingredients that are used in recipes with their respective quantity. "
 
-  produce_id = fields.Many2one("meal.produce", string="Produce being used")
+  produce_id = fields.Many2one("meal.produce", required=True, string="Produce being used")
   description = fields.Text()
   recipe_id = fields.Many2one("meal.recipe", string="Recipe used")
 

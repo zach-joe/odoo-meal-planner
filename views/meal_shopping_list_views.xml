@@ -9,7 +9,6 @@
         <field name="produce_id" string="Product" />
         <field name="quantity" />
         <field name="unit" />
-        <field name="recipe_ids" />
       </list>
     </field>
   </record>
